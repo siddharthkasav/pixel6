@@ -1,0 +1,21 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.containaer{
+    margin: 45px 647px;
+}
+.num{
+    padding: 4px 18px;
+}
+.num1{
+    padding: 5px 19px;
+}
+.num2{
+    padding: 5px 19px;
+}
+.button{
+    background-color: aqua;
+    font-size: large;
+    padding: 4px 14px;
+}

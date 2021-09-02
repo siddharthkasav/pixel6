@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>phone number</title>
+</head>
+
+<body>
+
+    <script>
+        function Myfuct() {
+            var correct_way = /^[A-Za-z]+$/;
+
+            var a = document.getElementById("User_Name").value;
+
+            if (a == "") {
+                document.getElementById("message").innerHTML = "plz fill user name ";
+                return false;
+            }
+            if (a.length < 2) {
+                document.getElementById("message").innerHTML = "user must be 2 char";
+                return false;
+            }
+            if (a.match(correct_way)) {
+                true;
+            }
+            else {
+                document.getElementById("message").innerHTML = "only alphabet are use";
+                return false;
+            }
+
+            // ****************************************************************
+            var b = document.getElementById("email").value;
+            if (b == "") {
+                document.getElementById("id").innerHTML = "plz fill user name ";
+                return false;
+            }
+
+
+
+
+
+           //*********************************************************************
+            var number_way = /^[0-9]+$/;
+
+            var c = document.getElementById("contact").value;
+            if (c.match(number_way)) {
+                true;
+            }
+            else {
+                document.getElementById("number").innerHTML = "only number are use";
+                return false;
+            }
+            if (c == "") {
+                document.getElementById("number").innerHTML = "plz fill contact number ";
+                return false;
+            }
+            if (c.length < 10) {
+                document.getElementById("number").innerHTML = "enter valid number\\ 10 digit number ";
+                return false;
+            }
+
+            if (c.charAt(0) == 6 || c.charAt(0) == 7) {
+
+                if (c.charAt(1) >= 2 && c.charAt(1) <= 9) {
+
+                    if (c.charAt(2) >= 1 && c.charAt(2) <= 9) {
+
+                        if (c.charAt(3) == 3 && c.charAt(4) == 7) {
+
+                            document.getElementById("number").innerHTML = "reliance jio , andhra pradesh";
+                            return false;
+                        }
+
+                        else if (c.charAt(3) == 1 && c.charAt(4) == 2) {
+
+                            document.getElementById("number").innerHTML = "Realince jio , arunachal pradesh";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 1 && c.charAt(4) == 8) {
+
+                            document.getElementById("number").innerHTML = "Realince jio , assam";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 1 && c.charAt(4) == 0) {
+
+                            document.getElementById("number").innerHTML = "Realince jio , bihar";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 2 && c.charAt(4) == 2) {
+
+                            document.getElementById("number").innerHTML = "Realince jio , chattisgarh";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 0 && c.charAt(4) == 7) {
+
+                            document.getElementById("number").innerHTML = "Realince jio , dehli";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 3 && c.charAt(4) == 0) {
+
+                            document.getElementById("number").innerHTML = "Realince jio , goa";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 2 && c.charAt(4) == 4) {
+
+                            document.getElementById("number").innerHTML = "Realince jio ,gujrat";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 0 && c.charAt(4) == 6) {
+
+                            document.getElementById("number").innerHTML = "Realince jio , hariyana";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 0 && c.charAt(4) == 2) {
+
+                            document.getElementById("number").innerHTML = "Realince jio , himachal pradesh";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 0 && c.charAt(4) == 1) {
+
+                            document.getElementById("number").innerHTML = "Realince jio , jammu and kashmir";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 2 && c.charAt(4) == 0) {
+
+                            document.getElementById("number").innerHTML = "Realince jio , jharkhand";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 2 && c.charAt(4) == 9) {
+
+                            document.getElementById("number").innerHTML = "Realince jio , karnataka";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 3 && c.charAt(4) == 2) {
+
+                            document.getElementById("number").innerHTML = "Realince jio , keral";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 3 && c.charAt(4) == 1) {
+
+                            document.getElementById("number").innerHTML = "Realince jio , lakshadweep";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 2 && c.charAt(4) == 3) {
+
+                            document.getElementById("number").innerHTML = "Realince jio , madhya pradesh";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 2 && c.charAt(4) == 7) {
+
+                            document.getElementById("number").innerHTML = "Realince jio , maharashtra";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 1 && c.charAt(4) == 4) {
+
+                            document.getElementById("number").innerHTML = "Realince jio , manipur";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 1 && c.charAt(4) == 7) {
+
+                            document.getElementById("number").innerHTML = "Realince jio , meghalay";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 1 && c.charAt(4) == 5) {
+
+                            document.getElementById("number").innerHTML = "Realince jio , mizoram";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 1 && c.charAt(4) == 3) {
+
+                            document.getElementById("number").innerHTML = "Realince jio , nagaland";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 2 && c.charAt(4) == 1) {
+
+                            document.getElementById("number").innerHTML = "Realince jio , odisa";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 3 && c.charAt(4) == 4) {
+
+                            document.getElementById("number").innerHTML = "Realince jio , pondicherry";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 0 && c.charAt(4) == 3) {
+
+                            document.getElementById("number").innerHTML = "Realince jio , punjab";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 0 && c.charAt(4) == 8) {
+
+                            document.getElementById("number").innerHTML = "Realince jio , rajastan";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 1 && c.charAt(4) == 1) {
+
+                            document.getElementById("number").innerHTML = "Realince jio , sikkim";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 3 && c.charAt(4) == 3) {
+
+                            document.getElementById("number").innerHTML = "Realince jio , tamil nadu";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 3 && c.charAt(4) == 6) {
+
+                            document.getElementById("number").innerHTML = "Realince jio ,telangana";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 1 && c.charAt(4) == 6) {
+
+                            document.getElementById("number").innerHTML = "Realince jio , tripura";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 0 && c.charAt(4) == 9) {
+
+                            document.getElementById("number").innerHTML = "Realince jio , uttar pradesh";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 0 && c.charAt(4) == 5) {
+
+                            document.getElementById("number").innerHTML = "Realince jio , uttarakhand";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 1 && c.charAt(4) == 9) {
+
+                            document.getElementById("number").innerHTML = "Realince jio , west bengal";
+                            return false;
+                        }
+                    }
+                }
+            }
+
+
+            if (c.charAt(0) == 8) {
+
+                if (c.charAt(1) >= 0 && c.charAt(1) <= 9) {
+
+                    if (c.charAt(2) >= 1 && c.charAt(2) <= 9) {
+
+                        if (c.charAt(3) == 3 && c.charAt(4) == 7) {
+
+                            document.getElementById("number").innerHTML = "idea , andhra pradesh";
+                            return false;
+                        }
+
+                        else if (c.charAt(3) == 1 && c.charAt(4) == 2) {
+
+                            document.getElementById("number").innerHTML = "idea , arunachal pradesh";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 1 && c.charAt(4) == 8) {
+
+                            document.getElementById("number").innerHTML = "idea , assam";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 1 && c.charAt(4) == 0) {
+
+                            document.getElementById("number").innerHTML = "idea , bihar";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 2 && c.charAt(4) == 2) {
+
+                            document.getElementById("number").innerHTML = "idea , chattisgarh";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 0 && c.charAt(4) == 7) {
+
+                            document.getElementById("number").innerHTML = "idea , dehli";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 3 && c.charAt(4) == 0) {
+
+                            document.getElementById("number").innerHTML = "idea , goa";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 2 && c.charAt(4) == 4) {
+
+                            document.getElementById("number").innerHTML = "idea ,gujrat";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 0 && c.charAt(4) == 6) {
+
+                            document.getElementById("number").innerHTML = "idea , hariyana";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 0 && c.charAt(4) == 2) {
+
+                            document.getElementById("number").innerHTML = "idea , himachal pradesh";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 0 && c.charAt(4) == 1) {
+
+                            document.getElementById("number").innerHTML = "idea , jammu and kashmir";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 2 && c.charAt(4) == 0) {
+
+                            document.getElementById("number").innerHTML = "idea , jharkhand";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 2 && c.charAt(4) == 9) {
+
+                            document.getElementById("number").innerHTML = "idea , karnataka";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 3 && c.charAt(4) == 2) {
+
+                            document.getElementById("number").innerHTML = "idea , keral";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 3 && c.charAt(4) == 1) {
+
+                            document.getElementById("number").innerHTML = "idea , lakshadweep";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 2 && c.charAt(4) == 3) {
+
+                            document.getElementById("number").innerHTML = "idea , madhya pradesh";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 2 && c.charAt(4) == 7) {
+
+                            document.getElementById("number").innerHTML = "idea , maharashtra";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 1 && c.charAt(4) == 4) {
+
+                            document.getElementById("number").innerHTML = "idea , manipur";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 1 && c.charAt(4) == 7) {
+
+                            document.getElementById("number").innerHTML = "idea , meghalay";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 1 && c.charAt(4) == 5) {
+
+                            document.getElementById("number").innerHTML = "idea , mizoram";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 1 && c.charAt(4) == 3) {
+
+                            document.getElementById("number").innerHTML = "idea , nagaland";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 2 && c.charAt(4) == 1) {
+
+                            document.getElementById("number").innerHTML = "idea , odisa";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 3 && c.charAt(4) == 4) {
+
+                            document.getElementById("number").innerHTML = "idea , pondicherry";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 0 && c.charAt(4) == 3) {
+
+                            document.getElementById("number").innerHTML = "idea , punjab";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 0 && c.charAt(4) == 8) {
+
+                            document.getElementById("number").innerHTML = "idea , rajastan";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 1 && c.charAt(4) == 1) {
+
+                            document.getElementById("number").innerHTML = "idea , sikkim";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 3 && c.charAt(4) == 3) {
+
+                            document.getElementById("number").innerHTML = "idea , tamil nadu";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 3 && c.charAt(4) == 6) {
+
+                            document.getElementById("number").innerHTML = "idea ,telangana";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 1 && c.charAt(4) == 6) {
+
+                            document.getElementById("number").innerHTML = "idea , tripura";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 0 && c.charAt(4) == 9) {
+
+                            document.getElementById("number").innerHTML = "idea , uttar pradesh";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 0 && c.charAt(4) == 5) {
+
+                            document.getElementById("number").innerHTML = "idea , uttarakhand";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 1 && c.charAt(4) == 9) {
+
+                            document.getElementById("number").innerHTML = "idea , west bengal";
+                            return false;
+                        }
+
+                    }
+                }
+            }
+
+            if (c.charAt(0) == 9) {
+
+                if (c.charAt(1) >= 0 && c.charAt(1) <= 2) {
+
+                    if (c.charAt(2) >= 1 && c.charAt(2) <= 9) {
+
+                        if (c.charAt(3) == 3 && c.charAt(4) == 7) {
+
+                            document.getElementById("number").innerHTML = "idea , andhra pradesh";
+                            return false;
+                        }
+
+                        else if (c.charAt(3) == 1 && c.charAt(4) == 2) {
+
+                            document.getElementById("number").innerHTML = "idea , arunachal pradesh";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 1 && c.charAt(4) == 8) {
+
+                            document.getElementById("number").innerHTML = "idea , assam";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 1 && c.charAt(4) == 0) {
+
+                            document.getElementById("number").innerHTML = "idea , bihar";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 2 && c.charAt(4) == 2) {
+
+                            document.getElementById("number").innerHTML = "idea , chattisgarh";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 0 && c.charAt(4) == 7) {
+
+                            document.getElementById("number").innerHTML = "idea , dehli";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 3 && c.charAt(4) == 0) {
+
+                            document.getElementById("number").innerHTML = "idea , goa";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 2 && c.charAt(4) == 4) {
+
+                            document.getElementById("number").innerHTML = "idea ,gujrat";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 0 && c.charAt(4) == 6) {
+
+                            document.getElementById("number").innerHTML = "idea , hariyana";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 0 && c.charAt(4) == 2) {
+
+                            document.getElementById("number").innerHTML = "idea , himachal pradesh";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 0 && c.charAt(4) == 1) {
+
+                            document.getElementById("number").innerHTML = "idea , jammu and kashmir";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 2 && c.charAt(4) == 0) {
+
+                            document.getElementById("number").innerHTML = "idea , jharkhand";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 2 && c.charAt(4) == 9) {
+
+                            document.getElementById("number").innerHTML = "idea , karnataka";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 3 && c.charAt(4) == 2) {
+
+                            document.getElementById("number").innerHTML = "idea , keral";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 3 && c.charAt(4) == 1) {
+
+                            document.getElementById("number").innerHTML = "idea , lakshadweep";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 2 && c.charAt(4) == 3) {
+
+                            document.getElementById("number").innerHTML = "idea , madhya pradesh";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 2 && c.charAt(4) == 7) {
+
+                            document.getElementById("number").innerHTML = "idea , maharashtra";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 1 && c.charAt(4) == 4) {
+
+                            document.getElementById("number").innerHTML = "idea , manipur";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 1 && c.charAt(4) == 7) {
+
+                            document.getElementById("number").innerHTML = "idea , meghalay";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 1 && c.charAt(4) == 5) {
+
+                            document.getElementById("number").innerHTML = "idea , mizoram";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 1 && c.charAt(4) == 3) {
+
+                            document.getElementById("number").innerHTML = "idea , nagaland";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 2 && c.charAt(4) == 1) {
+
+                            document.getElementById("number").innerHTML = "idea , odisa";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 3 && c.charAt(4) == 4) {
+
+                            document.getElementById("number").innerHTML = "idea , pondicherry";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 0 && c.charAt(4) == 3) {
+
+                            document.getElementById("number").innerHTML = "idea , punjab";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 0 && c.charAt(4) == 8) {
+
+                            document.getElementById("number").innerHTML = "idea , rajastan";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 1 && c.charAt(4) == 1) {
+
+                            document.getElementById("number").innerHTML = "idea , sikkim";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 3 && c.charAt(4) == 3) {
+
+                            document.getElementById("number").innerHTML = "idea , tamil nadu";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 3 && c.charAt(4) == 6) {
+
+                            document.getElementById("number").innerHTML = "idea ,telangana";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 1 && c.charAt(4) == 6) {
+
+                            document.getElementById("number").innerHTML = "idea , tripura";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 0 && c.charAt(4) == 9) {
+
+                            document.getElementById("number").innerHTML = "idea , uttar pradesh";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 0 && c.charAt(4) == 5) {
+
+                            document.getElementById("number").innerHTML = "idea , uttarakhand";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 1 && c.charAt(4) == 9) {
+
+                            document.getElementById("number").innerHTML = "idea , west bengal";
+                            return false;
+                        }
+                    }
+                }
+            }
+
+
+            if (c.charAt(0) == 9) {
+
+                if (c.charAt(1) >= 2 && c.charAt(1) <= 9) {
+
+                    if (c.charAt(2) >= 1 && c.charAt(2) <= 9) {
+
+                        if (c.charAt(3) == 3 && c.charAt(4) == 7) {
+
+                            document.getElementById("number").innerHTML = "vodafone , andhra pradesh";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 1 && c.charAt(4) == 2) {
+
+                            document.getElementById("number").innerHTML = "vodafone , arunachal pradesh";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 1 && c.charAt(4) == 8) {
+
+                            document.getElementById("number").innerHTML = "vodafone , assam";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 1 && c.charAt(4) == 0) {
+
+                            document.getElementById("number").innerHTML = "vodafone , bihar";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 2 && c.charAt(4) == 2) {
+
+                            document.getElementById("number").innerHTML = "vodafone , chattisgarh";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 0 && c.charAt(4) == 7) {
+
+                            document.getElementById("number").innerHTML = "vodafone , dehli";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 3 && c.charAt(4) == 0) {
+
+                            document.getElementById("number").innerHTML = "vodafone , goa";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 2 && c.charAt(4) == 4) {
+
+                            document.getElementById("number").innerHTML = "Vodafone ,gujrat";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 0 && c.charAt(4) == 6) {
+
+                            document.getElementById("number").innerHTML = "vodafone , hariyana";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 0 && c.charAt(4) == 2) {
+
+                            document.getElementById("number").innerHTML = "vodafone , himachal pradesh";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 0 && c.charAt(4) == 1) {
+
+                            document.getElementById("number").innerHTML = "vodafone , jammu and kashmir";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 2 && c.charAt(4) == 0) {
+
+                            document.getElementById("number").innerHTML = "vodafone , jharkhand";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 2 && c.charAt(4) == 9) {
+
+                            document.getElementById("number").innerHTML = "vodafone , karnataka";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 3 && c.charAt(4) == 2) {
+
+                            document.getElementById("number").innerHTML = "vodafone , keral";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 3 && c.charAt(4) == 1) {
+
+                            document.getElementById("number").innerHTML = "vodafone , lakshadweep";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 2 && c.charAt(4) == 3) {
+
+                            document.getElementById("number").innerHTML = "vodafone , madhya pradesh";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 2 && c.charAt(4) == 7) {
+
+                            document.getElementById("number").innerHTML = "vodafone , maharashtra";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 1 && c.charAt(4) == 4) {
+
+                            document.getElementById("number").innerHTML = "vodafone , manipur";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 1 && c.charAt(4) == 7) {
+
+                            document.getElementById("number").innerHTML = "vodafone , meghalay";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 1 && c.charAt(4) == 5) {
+
+                            document.getElementById("number").innerHTML = "vodafone , mizoram";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 1 && c.charAt(4) == 3) {
+
+                            document.getElementById("number").innerHTML = "vodafone , nagaland";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 2 && c.charAt(4) == 1) {
+
+                            document.getElementById("number").innerHTML = "vodafone , odisa";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 3 && c.charAt(4) == 4) {
+
+                            document.getElementById("number").innerHTML = "vodafone , pondicherry";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 0 && c.charAt(4) == 3) {
+
+                            document.getElementById("number").innerHTML = "vodafone , punjab";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 0 && c.charAt(4) == 8) {
+
+                            document.getElementById("number").innerHTML = "vodafone , rajastan";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 1 && c.charAt(4) == 1) {
+
+                            document.getElementById("number").innerHTML = "vodafone , sikkim";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 3 && c.charAt(4) == 3) {
+
+                            document.getElementById("number").innerHTML = "vodafone , tamil nadu";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 3 && c.charAt(4) == 6) {
+
+                            document.getElementById("number").innerHTML = "vodafone ,telangana";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 1 && c.charAt(4) == 6) {
+
+                            document.getElementById("number").innerHTML = "vodafone , tripura";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 0 && c.charAt(4) == 9) {
+
+                            document.getElementById("number").innerHTML = "vodafone , uttar pradesh";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 0 && c.charAt(4) == 5) {
+
+                            document.getElementById("number").innerHTML = "vodafone , uttarakhand";
+                            return false;
+                        }
+                        else if (c.charAt(3) == 1 && c.charAt(4) == 9) {
+
+                            document.getElementById("number").innerHTML = "vodafone , west bengal";
+                            return false;
+                        }
+                    }
+                }
+            }
+
+
+        }
+    </script>
+
+
+
+
+
+    <form class="containaer" onsubmit="return Myfuct()">
+        UserName : <input type="text" class="num" id="User_Name" value="" placeholder="username" required>
+        <span id="message"></span>
+        <br></br>
+        Email id : <input type="text" class ="num1"id="email" value="" placeholder="Email id" required>
+        <span id="id"></span>
+        <br></br>
+        contact number : <input type="text" class="num2" maxlength="10" id="contact" value="" placeholder="(xxx)-xxx-xxxx" required>
+        <span id="number"></span>
+        <br></br>
+        <input type="submit" class="button" value="submit"> </input>
+        <br></br>
+
+    </form>
+
+</body>
+
+</html>
